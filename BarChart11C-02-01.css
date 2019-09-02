@@ -1,0 +1,36 @@
+body {
+    background-color: aliceblue;
+    text-align: center;
+    height: 100vh;
+
+}
+
+.container {
+    height: 10em;
+    width: 90%;
+    margin: 10em auto;
+    border: 1px solid black;
+
+    display: -moz-box;
+    /* Firefox */
+    display: -webkit-box;
+    /* Safari and Chrome */
+    display: box;
+
+    -webkit-box-align: end;
+}
+
+.bar {
+    background-color: red;
+    margin: 0 1px;
+
+    -moz-box-flex: 1.0;
+    /* Firefox */
+    -webkit-box-flex: 1.0;
+    /* Safari and Chrome */
+    box-flex: 1.0;
+    transition-property: height;
+    transition-duration: .2s;
+    transition-delay: .1s;
+
+}
